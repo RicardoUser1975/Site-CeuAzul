@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Céu Azul - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Móvel -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="#home" class="logo">Produtos Céu Azul</a>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Seção Home -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content">
+                <h1>Bem-vindo à Produtos Céu Azul</h1>
+                <p>Qualidade e confiança em cada produto</p>
+                <a href="#produtos" class="btn-cta">Ver Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Produtos com Slider -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <div class="slide-content">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=400&fit=crop" alt="Produto 1" class="slide-image">
+                            <h3>Relógio Premium</h3>
+                            <p>Relógio elegante e sofisticado para todas as ocasiões. Design moderno com materiais de alta qualidade.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="slide-content">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=400&fit=crop" alt="Produto 2" class="slide-image">
+                            <h3>Fone Bluetooth</h3>
+                            <p>Experiência sonora excepcional com tecnologia Bluetooth de última geração. Conforto e qualidade.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <div class="slide-content">
+                            <img src="https://images.unsplash.com/photo-1585338107529-13afc5f02586?w=600&h=400&fit=crop" alt="Produto 3" class="slide-image">
+                            <h3>Garrafa Térmica</h3>
+                            <p>Mantenha suas bebidas na temperatura ideal por horas. Design sustentável e durável.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles Manuais -->
+                <button class="slider-btn prev" aria-label="Anterior">&#10094;</button>
+                <button class="slider-btn next" aria-label="Próximo">&#10095;</button>
+                <!-- Indicadores -->
+                <div class="slider-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" required minlength="3">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem *</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required minlength="10"></textarea>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer 1 -->
+    <footer class="footer-principal">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Sobre</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Dados da Empresa</h3>
+                <p>Produtos Céu Azul Ltda.</p>
+                <p>CNPJ: 00.000.000/0001-00</p>
+                <p>Rua Exemplo, 123 - Rio de Janeiro, RJ</p>
+            </div>
+            <div class="footer-col">
+                <h3>Redes Sociais</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer 2 - Autoria -->
+    <footer class="footer-autoria">
+        <div class="container">
+            <p>&copy; 2026 Produtos Céu Azul. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Ricardo Azevedo da Conceição</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
